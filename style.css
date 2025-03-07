@@ -1,0 +1,189 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:80%;
+    margin:0px auto; 
+    padding:20px 0px;
+}
+header{
+    background-color: blueviolet;
+}
+.header-wrapper h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.header-wrapper{
+    display:flex;
+    justify-content:space-between;
+    color:white;
+
+}
+.header-wrapper a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+
+}
+.header-wrapper nav{
+    display:flex;
+    gap:20px;
+}
+.banner{
+    padding:100px 0px;
+}
+.banner-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-wrapper div{
+    width:50%;
+}
+.banner-wrapper h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: 700;
+    
+}
+.banner-wrapper p{
+    margin: 30px 0px;
+    color: #505050;
+    font-size: 34px;
+    line-height: 30px;
+}
+.btn a{
+    text-decoration: none;
+    color:black;
+
+}
+.btn{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    justify-content:space-between; /* Center the buttons */
+}
+.btn a:first-child{
+    padding:25px 15px;
+    background-color: orange;
+    border-radius: 15px;;
+
+}
+.the-jobs{
+    padding:100px 0px;
+
+}
+.the-jobs h2{
+  margin-bottom: 30px;
+  font-weight:700;
+}
+.the-jobs-wrapper{
+    color:white;
+    display:flex;
+    gap:25px;
+
+}
+.the-jobs-wrapper div{
+    border-radius: 20px;
+    padding:18px 18px;
+
+}
+.the-jobs-wrapper h4{
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.the-jobs-wrapper>div a
+{
+    color:white;
+    background-color: transparent;
+    border:1px solid;
+    border-radius: 5px;
+    padding:5px 5px;
+    transition:ease-out 0.4s;
+}
+.the-jobs-wrapper >div >div a:hover{
+    background-color: goldenrod;
+    color:azure;
+}
+.the-jobs-wrapper>div>div{
+    display:flex;
+    gap:30px;
+    align-items: center;
+}
+.the-jobs-wrapper >div>span{
+    color:red;
+    display: inline-block;
+    margin-bottom: 15px;;
+
+
+}
+.the-jobs-wrapper>div:nth-child(1){
+ background-color:#0C445C;
+}
+.the-jobs-wrapper>div:nth-child(2){
+    background-color:#5B2C98;
+}
+.the-jobs-wrapper>div:nth-child(3){
+    background-color: #7F3219;
+}
+.banner-wrapper > div >span >span{
+    color:purple;
+}
+
+footer{
+    padding: 20px 0px;
+    background-color: #D6D6D6;
+}
+
+footer p{
+    text-align: center;
+    color: #4254F4;
+}
+@media screen and (max-width: 992px) {
+   .header-wrapper{
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+   }
+   .header-wrapper nav{
+    justify-content: center;
+   }
+   .text-break{
+    display: inline;
+}
+
+  }
+  
+  @media screen and (max-width: 992px){
+   .banner-wrapper{
+       flex-direction: column;
+       align-items: center;
+   }
+    .banner-wrapper >div{
+    width:100%;
+   }
+   .banner-wrapper>div:first-child{
+    text-align: center;
+   }
+
+   
+.banner-wrapper > div a{
+    margin-bottom: 30px;
+}
+   .the-jobs-wrapper{
+    flex-direction: column;
+   }
+   .banner-wrapper>div>a{
+    justify-content: center;
+   }
+   .banner-wrapper > div > .btn {
+        justify-content: center;
+        gap:10px; /* Center the buttons on smaller screens */
+    }
+  }
